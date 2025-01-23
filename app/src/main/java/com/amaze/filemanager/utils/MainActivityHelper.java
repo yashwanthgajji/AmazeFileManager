@@ -347,10 +347,10 @@ public class MainActivityHelper {
       newFile = new HybridFile(mode, newPath, newName, isDirectory);
     }
     if (oldFile.getSimpleName().equals(newFile.getSimpleName())) {
-        return;
+      return;
     }
     final Toast toast =
-            Toast.makeText(context, context.getString(R.string.renaming), Toast.LENGTH_SHORT);
+        Toast.makeText(context, context.getString(R.string.renaming), Toast.LENGTH_SHORT);
     toast.show();
     Operations.rename(
         oldFile,
